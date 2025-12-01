@@ -19,6 +19,12 @@
 ![License](https://img.shields.io/badge/License-Freeware-green)
 ![Status](https://img.shields.io/badge/Version-20.0_Gold-gold)
 
+<div align="center">
+  <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/download/v20.0/Nina_Analyzer_Alive.zip">
+    <img src="https://img.shields.io/badge/DOWNLOAD_WINDOWS_EXE-Click_Here-success?style=for-the-badge&logo=windows&logoColor=white" alt="Download Now" />
+  </a>
+</div>
+
 **Precision metrology tool for N.I.N.A. astrophotography logs.**
 
 This application analyzes your session logs to calculate the **True RMS (Root Mean Square)** guiding error, performs forensic diagnosis of your guide star (using PHD2 data), and displays real-time efficiency metrics. Designed with a "Deep Dark" interface to preserve your night vision inside the observatory.
@@ -62,7 +68,7 @@ To unlock the advanced metrology and star diagnosis features, **N.I.N.A. must be
 
 This software is distributed as a **single portable executable** (`.exe`).
 
-1.  **Download** the latest release (`.zip`) from the **[Releases](../../releases)** section (on the right sidebar).
+1.  **Download** the latest release (`.zip`) by clicking the green button above or from the **[Releases](../../releases)** section.
 2.  **Unzip** the folder to a location of your choice.
 3.  **Run** `nina_analyzer_alive_v20.exe`.
 
@@ -106,6 +112,12 @@ Since this application is not digitally signed with a corporate certificate, Win
 ![Plataforma](https://img.shields.io/badge/Plataforma-Windows-blue)
 ![Licencia](https://img.shields.io/badge/Licencia-Freeware-green)
 ![Estado](https://img.shields.io/badge/Versión-20.0_Gold-gold)
+
+<div align="center">
+  <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/download/v20.0/Nina_Analyzer_Alive.zip">
+    <img src="https://img.shields.io/badge/DESCARGAR_WINDOWS_EXE-Clic_Aquí-success?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar Ahora" />
+  </a>
+</div>
 
 **Herramienta de metrología de precisión para logs de astrofotografía de N.I.N.A.**
 
@@ -152,7 +164,7 @@ Para desbloquear la metrología avanzada y el diagnóstico estelar, **N.I.N.A. d
 
 Este software se distribuye como un **ejecutable portátil único** (`.exe`).
 
-1.  **Descarga** la última versión (`.zip`) desde la sección **[Releases](../../releases)** (en la barra lateral derecha).
+1.  **Descarga** la última versión (`.zip`) haciendo clic en el botón verde de arriba o desde la sección **[Releases](../../releases)**.
 2.  **Descomprime** la carpeta en la ubicación que prefieras.
 3.  **Ejecuta** `nina_analyzer_alive_v20.exe`.
 
