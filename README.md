@@ -13,11 +13,11 @@
 ---
 
 <a name="-español-documentación-oficial"></a>
-# 🔭 N.I.N.A. Analyzer - Precision Suite (v24)
+# 🔭 N.I.N.A. Analyzer - Precision Suite (v25)
 
-![Versión](https://img.shields.io/badge/Versión-v24.0_Gold-gold)
+![Versión](https://img.shields.io/badge/Versión-v25.0_Black_Box-gold)
 ![Plataforma](https://img.shields.io/badge/Plataforma-Windows_Portable-blue)
-![Motor](https://img.shields.io/badge/Motor-Deep_Freeze-cyan)
+![Motor](https://img.shields.io/badge/Motor-Metrology_Engine_v2-cyan)
 ![Licencia](https://img.shields.io/badge/Licencia-Freeware-green)
 
 <div align="center">
@@ -25,7 +25,7 @@
   <p><em>Transforme gigabytes de logs de sesión en Inteligencia Operativa.</em></p>
   
   <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/latest">
-    <img src="https://img.shields.io/badge/DESCARGAR_EXE_v24-Clic_Aquí-success?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar Ahora" />
+    <img src="https://img.shields.io/badge/DESCARGAR_EXE_v25-Clic_Aquí-success?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar Ahora" />
   </a>
 </div>
 
@@ -37,38 +37,40 @@ El software se distribuye bajo la filosofía **"Portable & Standalone"**: Un ún
 
 ---
 
-## ⚡ Tecnología v24: El Motor "Deep Freeze"
+## ⚡ Novedades en v25: Arquitectura "Black Box"
 
-La versión 24 introduce un cambio radical en la arquitectura del software para manejar sesiones masivas (miles de subs) sin latencia.
+Esta versión introduce módulos de auditoría profunda para detectar ineficiencias y eventos que antes pasaban desapercibidos.
 
-* **Persistencia de Memoria:** Los gráficos vectoriales complejos (Cronologías, Análisis de Deriva) se calculan una sola vez y se "congelan" en la memoria RAM.
-* **Navegación Instantánea:** Puede saltar entre el *Inspector de Enfoque*, el *Análisis de Ciclos* y el *Reporte de Seguridad* sin tiempos de carga ni parpadeos de pantalla.
-* **Interfaz Nativa:** Hemos reemplazado los cargadores web lentos por integración directa con **Windows API**. Ahora puede abrir carpetas de logs de cualquier tamaño usando el explorador de archivos nativo del sistema.
+### 1. Módulo Experimental: Caja Negra (Black Box) 👽
+N.I.N.A. evoluciona constantemente. La v25 incluye un **Colector de Eventos No Mapeados**.
+* **¿Qué hace?** Captura todas las líneas del log que el motor no reconoce (ej. nuevos drivers de rotadores, techos o scripts personalizados).
+* **Análisis de Frecuencia:** Le muestra una tabla separando el "ruido" (avisos repetidos 5000 veces) de los eventos únicos críticos.
+* **Colaboración:** Genera un reporte de texto automático para que pueda enviarlo al desarrollador y ayudar a mejorar el soporte de hardware.
+
+### 2. Análisis de Distribución de Tiempo ⏳
+Nuevo gráfico de torta (Pie Chart) para visualizar el **Balance de la Noche**.
+* Responde a la pregunta: *"¿Cuánto tiempo estuve capturando fotones vs. cuánto tiempo perdí resolviendo problemas?"*.
+* Vital para optimizar tiempos de dithering y enfoque.
+
+### 3. Inspector de Tareas Detallado 🔍
+Hemos desglosado el análisis en gráficos de barras independientes para:
+* **Captura:** Verificación de tiempos de exposición reales.
+* **Enfoque (AF):** Auditoría de duración de rutinas HFR (detecta backlashes lentos).
+* **Errores:** Cronología visual de fallos y alertas del sistema.
+
+### 4. Física de Precisión (F-Ratio & CFZ) 🔭
+El motor matemático ha sido actualizado. Ahora permite ingresar la **Relación Focal (f/)** real de su telescopio.
+* Esto permite un cálculo exacto de la **Zona Crítica de Enfoque (CFZ)** en micras.
+* El software le dirá si sus re-enfoques fueron necesarios o si su óptica es limitada por difracción.
 
 ---
 
-## 🔬 Metrología y Ciencia (Lo Nuevo)
+## 🔬 Funcionalidades Core (Heredadas de v24)
 
-Esta versión va más allá de mostrar gráficos bonitos. Aplica fórmulas ópticas para decirle **por qué** falló una subexposición.
-
-### 1. El Analizador de Ciclos (Heurística Ambiental)
-El software segmenta la noche basándose en los eventos de Auto-Enfoque y clasifica automáticamente qué está ocurriendo con su equipo:
-
-* 🟢 **Estabilidad Térmica:** Detecta cuando el HFR se mantiene plano (pendiente $\approx$ 0). Su equipo está en equilibrio.
-* ❄️ **Deriva Térmica (Thermal Drift):** Identifica una pendiente lineal positiva en el HFR. Diagnóstico: Su tubo óptico se está contrayendo por el frío.
-* ☁️ **Detección de Nubes:** Si el conteo de estrellas cae por debajo del **Percentil 15 (P15)** histórico de la sesión, marca el ciclo como "Interferencia Atmosférica".
-* 🌊 **Turbulencia (Seeing):** Si el promedio de HFR es estable pero la desviación estándar ($\sigma$) es alta, diagnostica mal *seeing* local.
-
-### 2. Zona Crítica de Enfoque (CFZ)
-El software lee la distancia focal y la relación focal de su telescopio para calcular su **Límite de Difracción Teórico**.
-> *¿Realmente necesitaba reenfocar o fue solo una ráfaga de viento?*
-La línea de CFZ en los gráficos le dará la respuesta definitiva.
-
-### 3. Auditoría de Seguridad
-Un nuevo panel forense al final del reporte verifica cómo terminó la sesión:
-* ¿Confirmó la montura el estado "Parked"?
-* ¿Se enviaron los comandos de cierre de cúpula/obturador?
-* ¿Se calentó la cámara antes de desconectar?
+* **Cine Forense (Event Replay):** Reproducción animada de la estrella guía utilizando algoritmos de *Max-Pooling* para detectar golpes de viento que los promedios matemáticos esconden.
+* **Gantt Interactivo:** Línea de tiempo con semáforo de calidad (Verde/Amarillo/Rojo) basado en su tolerancia de píxeles.
+* **System DNA:** Auditoría de hardware (RAM y Disco) para prevenir fallos por saturación.
+* **Manual Integrado:** Documentación técnica completa disponible dentro de la aplicación.
 
 ---
 
@@ -76,38 +78,34 @@ Un nuevo panel forense al final del reporte verifica cómo terminó la sesión:
 
 Este programa es **100% Portable**. No ensucia su registro de Windows ni requiere permisos de administrador.
 
-1.  **Descargar:** Vaya a la sección de **[Releases (Lanzamientos)](../../releases)** y baje el archivo `NINA_Analyzer_Alive_v24.exe`.
+1.  **Descargar:** Vaya a la sección de **[Releases (Lanzamientos)](../../releases)** y baje el archivo `NINA_Analyzer_Alive_v25.exe`.
 2.  **Ubicación:** Guarde el archivo donde quiera (Escritorio, Documentos, USB).
 3.  **Ejecutar:** Abra el archivo.
-    * *Aparecerá una consola negra por unos segundos (es el motor Deep Freeze cargando).*
+    * *Aparecerá una consola negra (CMD) por unos segundos. **NO LA CIERRE**, es el motor del programa.*
+    * *Si es la primera vez, puede pedir un correo. Presione ENTER para omitir.*
     * *Luego se abrirá la interfaz en su navegador predeterminado.*
-4.  **Cargar Datos:** Use el botón "Browse Folder" para seleccionar su carpeta de Logs de N.I.N.A.
+4.  **Cargar Datos:** Use el botón "Explorar PC" para seleccionar un log en `%localappdata%\NINA\Logs`.
 
 > **⚠️ Nota sobre Windows Defender:**
-> Al ser un software gratuito desarrollado por un **astrofotógrafo aficionado** (y no por una corporación), Windows puede mostrar una pantalla azul indicando "Editor Desconocido".
+> Al ser software gratuito desarrollado por un **astrofotógrafo aficionado**, Windows puede mostrar una advertencia de "Editor Desconocido".
 > * Esto es normal. Haga clic en **"Más información"** y luego en **"Ejecutar de todas formas"**.
-
----
-
-## 📚 Documentación Integrada
-No necesita descargar PDFs aparte. El **Manual de Referencia Técnica v24** está digitalizado e incrustado dentro de la propia aplicación. Puede consultarlo en la pestaña "Manual" mientras analiza sus datos.
 
 ---
 ---
 
 <a name="-english-official-documentation"></a>
-# 🔭 N.I.N.A. Analyzer - Precision Suite (v24)
+# 🔭 N.I.N.A. Analyzer - Precision Suite (v25)
 
-![Version](https://img.shields.io/badge/Version-v24.0_Gold-gold)
+![Version](https://img.shields.io/badge/Version-v25.0_Black_Box-gold)
 ![Platform](https://img.shields.io/badge/Platform-Windows_Portable-blue)
-![Engine](https://img.shields.io/badge/Engine-Deep_Freeze-cyan)
+![Engine](https://img.shields.io/badge/Engine-Metrology_Engine_v2-cyan)
 
 <div align="center">
   <h3>Forensic Metrology Tool for Astrophotography</h3>
   <p><em>Transform gigabytes of session logs into Operational Intelligence.</em></p>
   
   <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/latest">
-    <img src="https://img.shields.io/badge/DOWNLOAD_v24_EXE-Click_Here-success?style=for-the-badge&logo=windows&logoColor=white" alt="Download Now" />
+    <img src="https://img.shields.io/badge/DOWNLOAD_v25_EXE-Click_Here-success?style=for-the-badge&logo=windows&logoColor=white" alt="Download Now" />
   </a>
 </div>
 
@@ -119,38 +117,40 @@ The software follows a **"Portable & Standalone"** philosophy: A single executab
 
 ---
 
-## ⚡ v24 Technology: The "Deep Freeze" Engine
+## ⚡ What's New in v25: "Black Box" Architecture
 
-Version 24 introduces a radical architecture change to handle massive sessions (thousands of subs) with zero latency.
+This version introduces deep audit modules to detect inefficiencies and events that previously went unnoticed.
 
-* **Memory Persistence:** Complex vector charts (Timelines, Drift Analysis) are calculated once and "frozen" in RAM.
-* **Instant Navigation:** Jump between the *Focus Inspector*, *Cycle Analysis*, and *Security Report* with no loading times or screen flickering.
-* **Native Integration:** We replaced slow web uploaders with direct **Windows API** integration. You can now open log folders of any size using the system's native file explorer.
+### 1. Experimental Module: Black Box 👽
+N.I.N.A. is constantly evolving. v25 includes an **Unmapped Event Collector**.
+* **What does it do?** It captures all log lines the engine doesn't recognize (e.g., new rotator drivers, roofs, or custom scripts).
+* **Frequency Analysis:** Displays a table separating "noise" (warnings repeated 5000 times) from critical unique events.
+* **Collaboration:** Generates an automatic text report so you can send it to the developer and help improve hardware support.
+
+### 2. Time Distribution Analysis ⏳
+New Pie Chart visualization for **Night Balance**.
+* Answers the question: *"How much time was I capturing photons vs. how much time did I waste solving problems?"*.
+* Vital for optimizing dithering and focus times.
+
+### 3. Detailed Task Inspector 🔍
+We have broken down the analysis into independent bar charts for:
+* **Imaging:** Verification of actual exposure times.
+* **Autofocus (AF):** Audit of HFR routine duration (detects slow backlash).
+* **Errors:** Visual timeline of system failures and alerts.
+
+### 4. Precision Physics (F-Ratio & CFZ) 🔭
+The math engine has been updated. It now allows inputting the real **Focal Ratio (f/)** of your telescope.
+* This allows for an exact calculation of the **Critical Focus Zone (CFZ)** in microns.
+* The software will tell you if your re-focusing was necessary or if your optics are diffraction-limited.
 
 ---
 
-## 🔬 Metrology & Science (New Features)
+## 🔬 Core Features (Inherited from v24)
 
-This version goes beyond pretty charts. It uses optical formulas to tell you **why** a sub-exposure failed.
-
-### 1. The Cycle Analyzer (Environmental Heuristics)
-The software segments the night based on Auto-Focus events and automatically classifies what is happening with your gear:
-
-* 🟢 **Thermal Stability:** Detects when HFR remains flat (slope $\approx$ 0). Your rig is in equilibrium.
-* ❄️ **Thermal Drift:** Identifies a positive linear slope in HFR. Diagnosis: Your optical tube is contracting due to cold.
-* ☁️ **Cloud Detection:** If the Star Count drops below the historical **15th Percentile (P15)** of the session, the cycle is flagged as "Atmospheric Interference".
-* 🌊 **Turbulence (Seeing):** If the average HFR is stable but the Standard Deviation ($\sigma$) is high, it diagnoses poor local seeing.
-
-### 2. Critical Focus Zone (CFZ)
-The software reads your telescope's focal length and focal ratio to calculate its **Theoretical Diffraction Limit**.
-> *Did you really need to refocus, or was it just a wind gust?*
-The CFZ line on the charts will give you the definitive answer.
-
-### 3. Security Audit
-A new forensic panel at the end of the report verifies how the session ended:
-* Did the mount confirm the "Parked" status?
-* Were the dome/shutter close commands sent?
-* Did the camera warm up before disconnecting?
+* **Forensic Cinema (Event Replay):** Animated playback of the guide star using *Max-Pooling* algorithms to detect wind gusts hidden by mathematical averages.
+* **Interactive Gantt:** Timeline with a quality traffic light system (Green/Yellow/Red) based on your pixel tolerance.
+* **System DNA:** Hardware audit (RAM and Disk) to prevent saturation failures.
+* **Integrated Manual:** Full technical documentation available within the app.
 
 ---
 
@@ -158,20 +158,22 @@ A new forensic panel at the end of the report verifies how the session ended:
 
 This program is **100% Portable**. It does not clutter your Windows Registry nor require admin rights.
 
-1.  **Download:** Go to the **[Releases](../../releases)** section and download `NINA_Analyzer_Alive_v24.exe`.
+1.  **Download:** Go to the **[Releases](../../releases)** section and download `NINA_Analyzer_Alive_v25.exe`.
 2.  **Location:** Save the file anywhere (Desktop, Documents, USB drive).
 3.  **Run:** Open the file.
-    * *A black console window will appear for a few seconds (this is the Deep Freeze engine loading).*
+    * *A black console window (CMD) will appear for a few seconds. **DO NOT CLOSE IT**, it is the program engine.*
+    * *If it's the first time, it might ask for an email. Press ENTER to skip.*
     * *Then, the interface will launch in your default web browser.*
-4.  **Load Data:** Use the "Browse Folder" button to select your N.I.N.A. Logs folder.
+4.  **Load Data:** Use the "Browse PC" button to select a log in `%localappdata%\NINA\Logs`.
 
 > **⚠️ Note on Windows Defender:**
-> Since this is free software developed by an **amateur astrophotographer** (and not a corporation), Windows might show a blue screen saying "Unknown Publisher".
+> Since this is free software developed by an **amateur astrophotographer** (and not a corporation), Windows might show an "Unknown Publisher" warning.
 > * This is normal. Click **"More Info"** and then **"Run Anyway"**.
 
 ---
 
 ## 🤝 Credits / Créditos
 * **Developer:** Iván Lizana (ASTROREMOTO).
-* **Tech Stack:** Python 3.13 + Streamlit + Plotly + Pandas.
+* **Tech Stack:** Python 3.14 + Streamlit + Plotly + Pandas.
+* **Support:** veckoff@gmail.com
 * Special thanks to **ACHAYA** for the theoretical foundations.
