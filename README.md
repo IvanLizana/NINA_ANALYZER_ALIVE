@@ -13,9 +13,9 @@
 ---
 
 <a name="-español-documentación-oficial"></a>
-# 🔭 N.I.N.A. Analyzer - Precision Suite (v27)
+# 🔭 N.I.N.A. Analyzer - Precision Suite (v27.10)
 
-![Versión](https://img.shields.io/badge/Versión-v27.0_Metrology_Engine-gold)
+![Versión](https://img.shields.io/badge/Versión-v27.10_Metadata_Hunter-gold)
 ![Plataforma](https://img.shields.io/badge/Plataforma-Windows_Portable-blue)
 ![Motor](https://img.shields.io/badge/Motor-Metrology_Engine_v3-cyan)
 ![Licencia](https://img.shields.io/badge/Licencia-Freeware-green)
@@ -25,7 +25,7 @@
   <p><em>Transforme gigabytes de logs de sesión en Inteligencia Operativa.</em></p>
   
   <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/latest">
-    <img src="https://img.shields.io/badge/DESCARGAR_EXE_v27-Clic_Aquí-success?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar Ahora" />
+    <img src="https://img.shields.io/badge/DESCARGAR_EXE_v27.10-Clic_Aquí-success?style=for-the-badge&logo=windows&logoColor=white" alt="Descargar Ahora" />
   </a>
 </div>
 
@@ -49,6 +49,10 @@ El software se distribuye bajo la filosofía **"Portable & Standalone"**: Un ún
 ## ⚡ Novedades en v27: "The Metrology Engine"
 
 Esta actualización transforma el software de una herramienta de visualización a una plataforma de **Auditoría Forense Estricta**.
+
+### 🔥 Actualización v27.10 (Hotfix & Metadata)
+* **Corrección de "Fotos Fantasma":** Se arregló un bug crítico donde el sistema contaba el doble de exposiciones (ej. 63 en vez de 32) al confundir el evento de disparo con el de guardado. Ahora usa lógica de "Supremacía del Stack".
+* **Bitácora Avanzada:** El reporte de texto ahora incluye metadatos técnicos granulares: **Gain, Offset y Binning**, agrupando las fotos automáticamente si cambiaste la configuración a mitad de la noche.
 
 ### 1. Motor de Metrología Fijo (Física Real) 📐
 Se acabaron las opiniones subjetivas. El sistema ahora calcula matemáticamente si su foto es válida basándose en la física de su equipo.
@@ -100,7 +104,7 @@ Esta versión introdujo módulos de auditoría profunda para detectar ineficienc
 
 Este programa es **100% Portable**. No ensucia su registro de Windows ni requiere permisos de administrador.
 
-1.  **Descargar:** Vaya a la sección de **[Releases (Lanzamientos)](../../releases)** y baje el archivo `NINA_Analyzer_Alive_v27.exe`.
+1.  **Descargar:** Vaya a la sección de **[Releases (Lanzamientos)](../../releases)** y baje el archivo `NINA_Analyzer_Alive_v27.10.exe`.
 2.  **Ubicación:** Guarde el archivo donde quiera (Escritorio, Documentos, USB).
 3.  **Ejecutar:** Abra el archivo.
     * *Aparecerá una consola negra (CMD) por unos segundos. **NO LA CIERRE**, es el motor del programa.*
@@ -116,9 +120,9 @@ Este programa es **100% Portable**. No ensucia su registro de Windows ni requier
 ---
 
 <a name="-english-official-documentation"></a>
-# 🔭 N.I.N.A. Analyzer - Precision Suite (v27)
+# 🔭 N.I.N.A. Analyzer - Precision Suite (v27.10)
 
-![Version](https://img.shields.io/badge/Version-v27.0_Metrology_Engine-gold)
+![Version](https://img.shields.io/badge/Version-v27.10_Metadata_Hunter-gold)
 ![Platform](https://img.shields.io/badge/Platform-Windows_Portable-blue)
 ![Engine](https://img.shields.io/badge/Engine-Metrology_Engine_v3-cyan)
 
@@ -127,7 +131,7 @@ Este programa es **100% Portable**. No ensucia su registro de Windows ni requier
   <p><em>Transform gigabytes of session logs into Operational Intelligence.</em></p>
   
   <a href="https://github.com/IvanLizana/NINA_ANALYZER_ALIVE/releases/latest">
-    <img src="https://img.shields.io/badge/DOWNLOAD_v27_EXE-Click_Here-success?style=for-the-badge&logo=windows&logoColor=white" alt="Download Now" />
+    <img src="https://img.shields.io/badge/DOWNLOAD_v27.10_EXE-Click_Here-success?style=for-the-badge&logo=windows&logoColor=white" alt="Download Now" />
   </a>
 </div>
 
@@ -151,6 +155,10 @@ The software follows a **"Portable & Standalone"** philosophy: A single executab
 ## ⚡ What's New in v27: "The Metrology Engine"
 
 This update transforms the software from a visualization tool into a **Strict Forensic Audit** platform.
+
+### 🔥 v27.10 Update (Hotfix & Metadata)
+* **Ghost Photo Fix:** Fixed a critical bug where the system double-counted exposures (e.g., 63 instead of 32) by confusing capture and save events. It now uses "Stack Supremacy" logic.
+* **Advanced Logbook:** The text report now includes granular technical metadata: **Gain, Offset, and Binning**, automatically grouping photos if you changed settings mid-night.
 
 ### 1. Fixed Metrology Engine (Real Physics) 📐
 Subjective opinions are gone. The system now mathematically calculates if your photo is valid based on your equipment's physics.
@@ -202,7 +210,7 @@ This version introduced deep audit modules to detect inefficiencies and unmapped
 
 This program is **100% Portable**. It does not clutter your Windows Registry nor require admin rights.
 
-1.  **Download:** Go to the **[Releases](../../releases)** section and download `NINA_Analyzer_Alive_v27.exe`.
+1.  **Download:** Go to the **[Releases](../../releases)** section and download `NINA_Analyzer_Alive_v27.10.exe`.
 2.  **Location:** Save the file anywhere (Desktop, Documents, USB drive).
 3.  **Run:** Open the file.
     * *A black console window (CMD) will appear for a few seconds. **DO NOT CLOSE IT**, it is the program engine.*
